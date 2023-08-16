@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor-preto :black;
+    --cor-vermelho:#cc3737;
+    --cor-brancorosado:bisque;
+    --cor-vermelhoescuro:brown;
+
+    --fonte-titulos:'Lobster', cursive;
+    --fonte-textos:'Montserrat', sans-serif;
+
+}
+
+body{
+    box-sizing: border-box;
+    background-color:var(--cor-preto);
+    color: var(--cor-brancorosado);
+}
+
+.cabecalho{
+    padding:2% 0 0 10% ;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabecalho__menu__link{
+    font-family:var(--fonte-textos); 
+    font-size: 1.5rem;
+    font-weight: 400px;
+    color: var(--cor-brancorosado);
+    text-decoration: none;
+
+}
+
+.cabecalho__menu__link:hover{
+    border-bottom: 2px solid var(--cor-brancorosado);
+}
+
+.apresentacao{
+    margin: 6% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.apresentacao__conteudo{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__titulo{
+    font-size: 2.2rem;
+    font-family: var(--fonte-titulos);
+    
+}
+
+.destaque-titulo{
+    color:var(--cor-vermelho);
+}
+.apresentacao__texto{
+    font-size: 1.25rem;
+    font-family: var(--fonte-textos);
+    text-align: justify;
+    
+}
+
+.apresentacao__subtitulo{
+    font-family: var(--fonte-textos);
+    font-size: 1.5rem;
+    font-weight: 200px;
+
+}
+
+.apresentacao__botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.botoes{
+    background-color: var(--cor-vermelhoescuro);
+    border: 2px solid var(--cor-brancorosado);
+    width: 41%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--cor-brancorosado);
+    font-family: var(--fonte-titulos);
+    
+}
+
+.botoes:hover {
+background-color: var(--cor-vermelho);
+}
+
+.imagem-cartas{
+    width: 40%;
+    /*height: 250px;*/
+    border-radius: 16px;
+}
+
+.rodape{
+    padding: 20px;
+    color: var(--cor-brancorosado);
+    background-color: var(--cor-vermelho);
+    text-align: center;
+    font-family: var(--fonte-textos);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.apresentacao__metodos{
+    margin: 5% 15%;
+}
+
+.apresentacao__titulo-metodos{
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-vermelho);
+    font-weight: 400;
+    display: flex;
+   justify-content: center;
+   flex-direction: row;
+}
+.apresentacao__subtitulo-metodos{
+    padding: 2%;
+    margin-top: 1rem;
+    color:var(--cor-vermelhoescuro);
+    font-family: var(--fonte-titulos);
+}
+
+.apresentacao__texto-metodos{
+    font-size: 1.25rem;
+    font-family: var(--fonte-textos);
+    color: var(--cor-brancorosado);
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.imagem__metodos{
+
+    text-align: center;
+}
+
+.imagem__buzios-taro{
+    width: 200px;
+    height: 200px;
+    padding: 3%;
+}
+
+@media (max-width: 670px) {
+   .cabecalho{
+    padding: 10% 10% 5% 10%;
+   } 
+
+   .cabecalho__menu{
+    justify-content: center;
+
+   }
+     
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 0% 5% 5% 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .imagem-cartas{
+        width: 60%;
+        
+    }
+    .apresentacao__titulo{
+        font-size: 1.8rem;
+    }
+}
+    
